@@ -1,0 +1,38 @@
+div.main-block {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+img.avatar {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+img.circle {
+	border-radius: 50%;
+}
+
+div.nav-links {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.nav-item {
+	flex: 1;
+	text-align: center;
+}
+
+div.section {
+	padding-left: 10%;
+	display: none;
+}
+
+div.section.active {
+	display: inline-block;
+}

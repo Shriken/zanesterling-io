@@ -1,0 +1,35 @@
+{% load static %}
+
+<html>
+<head>
+  <script src="{% static "info_page/script.js" %}"></script>
+  <link rel=stylesheet href="{% static "info_page/style.css" %}"/>
+</head>
+<body>
+  <div class="main-block">
+    <img class="avatar circle" src="{% static "info_page/avatar.jpg" %}"/>
+    <br>
+
+    <div class="nav-links">
+      <a class="nav-item nav-link" href="#bio">Bio</a>
+      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <a class="nav-item" href="{% static "info_page/resume.pdf" %}">
+        Resumé
+      </a>
+    </div>
+    <hr class="header-separator">
+
+    <a name="bio"/>
+    <div class="section active" id="bio">
+      <h2 class="section-title">Bio</h2>
+      Stuff and things you know man
+    </div>
+
+    <a name="projects"/>
+    <div class="section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      Here are all of my many projects
+    </div>
+  </div>
+</body>
+</html>
