@@ -10,3 +10,6 @@ since there's on average less text on the right end of the lines.
 
 Trying to present the info with simple style. Inspired by nice-looking unstyled
 html pages.
+
+Open GitHub, resumé, and email in separate tabs. Forces people to come back to
+my website eventually.
