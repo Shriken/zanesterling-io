@@ -1,3 +1,11 @@
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 div.main-block {
 	margin-left: 25%;
 	margin-right: 25%;
@@ -37,14 +45,16 @@ div.nav-links {
 	justify-content: space-around;
 }
 
-.nav-item {
+a.nav-item {
 	flex: 1;
 	text-align: center;
+	font-family: Bitter, serif;
 }
 
 div.sections {
 	padding-left: 10%;
 	padding-right: 6%;
+	font-family: Lato, serif;
 }
 
 div.section {
@@ -53,4 +63,9 @@ div.section {
 
 div.section.active {
 	display: inline-block;
+}
+
+div.footer {
+	text-align: center;
+	font-size: 8pt;
 }
