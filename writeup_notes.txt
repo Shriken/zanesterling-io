@@ -1,5 +1,12 @@
 Heavy emphasis on responsive design. Spent an evening making sure rescaling
 worked smoothly.
 
+Put a lot of care into making sure the site looks good without css, too. This
+helps both people with bad internet connections and visually impaired users who
+rely on text-to-speech to use websites.
+
 Padding of the section text is a little less on the right to achieve balance,
 since there's on average less text on the right end of the lines.
+
+Trying to present the info with simple style. Inspired by nice-looking unstyled
+html pages.
