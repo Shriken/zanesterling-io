@@ -6,7 +6,19 @@ div.main-block {
 img.avatar {
 	display: block;
 	margin: auto;
-	width: 80%;
+	width: 320px;
+}
+
+@media all and (max-width: 800px) {
+	div.main-block {
+		margin-left: auto;
+		margin-right: auto;
+		width: 400px;
+	}
+
+	img.avatar {
+		width: 80%;
+	}
 }
 
 img.circle {
