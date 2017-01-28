@@ -51,6 +51,11 @@ a.nav-item {
 	font-family: Bitter, serif;
 }
 
+a.nav-item.active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 div.sections {
 	padding-left: 10%;
 	padding-right: 6%;
