@@ -1,0 +1,5 @@
+Heavy emphasis on responsive design. Spent an evening making sure rescaling
+worked smoothly.
+
+Padding of the section text is a little less on the right to achieve balance,
+since there's on average less text on the right end of the lines.
