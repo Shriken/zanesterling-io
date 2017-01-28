@@ -1,4 +1,8 @@
 function nav_link_click(event) {
+	if (event.metaKey || event.ctrlKey) {
+		return;
+	}
+
 	let id = event.target.href.split('#')[1];
 	focus_section(id);
 }
