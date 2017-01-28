@@ -3,6 +3,13 @@ div.main-block {
 	margin-right: 25%;
 }
 
+@media handheld {
+	div.main-block {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 img.avatar {
 	display: block;
 	margin: auto;
