@@ -13,3 +13,5 @@ html pages.
 
 Open GitHub, resumé, and email in separate tabs. Forces people to come back to
 my website eventually.
+
+There were a number of minor behavior issues that needed tweaking.

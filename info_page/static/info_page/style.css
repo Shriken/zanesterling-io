@@ -1,20 +1,9 @@
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
+/*
+ * Main block
+ */
 div.main-block {
 	margin-left: 25%;
 	margin-right: 25%;
-}
-
-img.avatar {
-	display: block;
-	margin: auto;
-	width: 320px;
 }
 
 @media all and (max-width: 640px) {
@@ -31,10 +20,32 @@ img.avatar {
 	}
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/*
+ * Avatar
+ */
+img.avatar {
+	display: block;
+	margin: auto;
+	width: 320px;
+}
+
 img.circle {
 	border-radius: 50%;
 }
 
+
+/*
+ * Nav bar
+ */
 div.nav-links {
 	display: -webkit-box;
 	display: -moz-box;
@@ -56,6 +67,10 @@ a.nav-item.active {
 	text-decoration: underline;
 }
 
+
+/*
+ * Sections
+ */
 div.sections {
 	padding-left: 10%;
 	padding-right: 6%;
@@ -64,12 +79,45 @@ div.sections {
 
 div.section {
 	display: none;
+	width: 100%;
 }
 
 div.section.active {
 	display: inline-block;
 }
 
+
+/*
+ * Projects section
+ */
+ul.project-list {
+	width: 100%;
+	padding-left: 0;
+	list-style: none;
+}
+
+li.project {
+	width: 100%;
+}
+
+li.project div,ul {
+	display: block;
+	margin-left: 4%;
+}
+
+li.project .project-title {
+	font-size: large;
+	margin-left: 0%;
+}
+
+li.project ul.project-awards {
+	list-style: none;
+}
+
+
+/*
+ * Footer
+ */
 div.footer {
 	text-align: center;
 	font-size: 8pt;
