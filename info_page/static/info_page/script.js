@@ -1,3 +1,8 @@
+function hash_change(event) {
+	let id = event.newURL.split('#')[1];
+	focus_section(id);
+}
+
 function nav_link_click(event) {
 	if (event.metaKey || event.ctrlKey) {
 		return;
@@ -50,3 +55,4 @@ function init() {
 }
 
 window.onload = init;
+window.onhashchange = hash_change;
