@@ -98,6 +98,7 @@ ul.project-list {
 
 li.project {
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 li.project div,ul {
@@ -114,6 +115,25 @@ li.project ul.project-awards {
 	list-style: none;
 }
 
+
+/*
+ * Bio section
+ */
+div.section#bio div.container {
+	margin-left: 4%;
+}
+
+div.section#bio div.container div {
+	margin-bottom: 20px;
+}
+
+ul.bio-achievements {
+	list-style: none;
+}
+
+ul.bio-achievements li {
+	margin-bottom: 10px;
+}
 
 /*
  * Footer
