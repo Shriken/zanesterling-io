@@ -5,6 +5,14 @@ function nav_link_click(event) {
 
 	let id = event.target.href.split('#')[1];
 	focus_section(id);
+
+	if (history.pushState) {
+		history.pushState(null, null, event.target.href);
+	} else {
+		window.location.hash = id;
+	}
+
+	return false;
 }
 
 function focus_section(id) {
