@@ -1,6 +1,10 @@
 function hash_change(event) {
 	let id = event.newURL.split('#')[1];
-	focus_section(id);
+	if (id) {
+		focus_section(id);
+	} else {
+		focus_section('bio');
+	}
 }
 
 function nav_link_click(event) {
