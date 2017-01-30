@@ -1,0 +1,41 @@
+{% load static %}
+
+<html>
+<head>
+  <title>{% block title %}Zane Sterling{% endblock %}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Bitter|Lato"
+    rel="stylesheet"
+  />
+
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+  <div class="main-block">
+    <img class="avatar circle" src="{% static "info_page/avatar.jpg" %}"/>
+    <br>
+
+    <div class="nav-links">
+      {% block nav_links %}{% endblock %}
+    </div>
+    <hr>
+
+    <div class="sections">
+      {% block sections %}{% endblock %}
+    </div>
+
+    <hr>
+    <div class="footer">
+      © 2017 Zane Sterling<br>
+      <a href="https://github.com/Shriken/zanesterling-io">Source code</a>
+      <span class="footer-social">
+      </span>
+    </div>
+  </div>
+</body>
+</html>

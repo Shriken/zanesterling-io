@@ -1,212 +1,35 @@
-{% load static %}
+{% extends "info_page/base.html" %}
 
-<html>
-<head>
-  <title>Zane Sterling</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block head %}
+  {% load static %}
 
   <script src="{% static "info_page/script.js" %}"></script>
   <link href="{% static "info_page/style.css" %}" rel=stylesheet />
-  <link href="https://fonts.googleapis.com/css?family=Bitter|Lato" rel="stylesheet" />
-</head>
-<body>
-  <div class="main-block">
-    <img class="avatar circle" src="{% static "info_page/avatar.jpg" %}"/>
-    <br>
+{% endblock %}
 
-    <div class="nav-links">
-      <a class="nav-item nav-link active" href="#bio">bio</a>
-      <a class="nav-item nav-link" href="#projects">projects</a>
-      <a class="nav-item" target="_blank" href="https://github.com/Shriken">github</a>
-      <a class="nav-item" target="_blank" href="{% static "info_page/resumé.pdf" %}">resumé</a>
-      <a class="nav-item" target="_blank" href="mailto://me@zanesterling.io">contact</a>
-    </div>
-    <hr class="header-separator">
 
-    <div class="sections">
-      <a name="bio"/>
-      <div class="section active" id="bio">
-        <h2 class="section-title">Bio</h2>
-        <p>
-          Lorem ipsum dolor sit amet, sea graecis gloriatur moderatius ut, ne
-          unum oporteat nec. Partem malorum cu usu, iusto laoreet sed ex.
-          Aeterno minimum voluptua eos no, ei est dicam nonumy luptatum, ut
-          eleifend gubergren voluptaria ius.  Id his facete feugiat qualisque.
-        </p>
+{% block nav_links %}
+  {% load static %}
 
-        <p>
-          Et sanctus mediocritatem qui. Has et soluta iriure persecuti, et mea
-          mandamus adolescens dissentiunt. Et vel fierent facilisis, mei
-          inimicus splendide deseruisse no. Nam copiosae scribentur in.
-        </p>
-      </div>
+  <a class="nav-item nav-link active" href="#bio">bio</a>
+  <a class="nav-item nav-link" href="#projects">projects</a>
+  <a class="nav-item" target="_blank" href="https://github.com/Shriken">github</a>
+  <a class="nav-item" target="_blank" href="{% static "info_page/resumé.pdf" %}">resumé</a>
+  <a class="nav-item" target="_blank" href="mailto://me@zanesterling.io">contact</a>
+{% endblock %}
 
-      <a name="projects"/>
-      <div class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <ul class="project-list">
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/osdev">FROST</a>
-            </div>
-            <div class="project-summary">
-              A monolithic operating system written to learn how they work.
-            </div>
-            <div class="project-toolstack">C, Assembly</div>
-            <div class="project-date">Aug '16 - Jan '17</div>
-          </li>
-          <br>
 
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/petri-dish">Petri Dish</a>
-            </div>
-            <div class="project-summary">
-              A desktop clone of the
-              <a href="https://play.google.com/store/apps/details?id=com.saterskog.cell_lab&hl=en">
-                Cell Lab
-              </a>
-              android app to learn <a href="https://dlang.org">D</a>.
-            </div>
-            <div class="project-toolstack">D, SDL</div>
-            <div class="project-date">Spring 2016</div>
-          </li>
-          <br>
-
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/cloth-simulation">Cloth Simulation</a>
-            </div>
-            <div class="project-summary">
-              A C++ implementation of <a href="http://dl.acm.org/citation.cfm?id=280821">Large Steps in Cloth Simulation</a>.
-            </div>
-            <div class="project-toolstack">C++, OpenGL</div>
-            <div class="project-date">Spring 2015</div>
-          </li>
-          <br>
-
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/animation-hacking">Animation Hacking</a>
-            </div>
-            <div class="project-summary">
-              Experiments with the HTML5 canvas.
-            </div>
-            <div class="project-toolstack">JS</div>
-            <div class="project-date">2015+</div>
-          </li>
-          <br>
-
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/spinup">Spinup</a>
-            </div>
-            <div class="project-summary">
-              A load balancer that spins up new servers only when you need them.
-            </div>
-            <div class="project-toolstack">C, Java, Intel Edison, Myo Armband</div>
-            <div class="project-date">Jan 2015</div>
-            <ul class="project-awards">
-              <li>Made at <a href="https://pennapps.com">Penn Apps 2015</a>
-            </ul>
-          </li>
-          <br>
-
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/water-physics">Water Physics</a>
-            </div>
-            <div class="project-summary">
-              A discrete un-simulation of water physics.
-            </div>
-            <div class="project-toolstack">Java</div>
-            <div class="project-date">Jan 2015</div>
-          </li>
-          <br>
-
-          <li class="project">
-            <div class="project-title">
-              HeadLights
-            </div>
-            <div class="project-summary">
-              An app for cyclists that turns
-              <a href="http://bikesafety.caa.ca/cyclists/riding-skills-and-tips/hand-signals.php">
-                standard hand signals
-              </a>
-              into blinkers on the back of your helmet.
-            </div>
-            <div class="project-toolstack">C, Java, Intel Edison, Myo Armband</div>
-            <div class="project-date">Fall 2014</div>
-            <ul class="project-awards">
-              <li>Won 2nd overall at <a href="http://yhack.org/">YHack 2014</a></li>
-            </ul>
-          </li>
-          <br>
-
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/tint">Tint</a>
-            </div>
-            <div class="project-summary">
-              A tool for automagically turning TODO comments into GitHub
-              issues.
-            </div>
-            <div class="project-toolstack">Python, Javascript, HTML+Sass</div>
-            <div class="project-date">Fall 2014</div>
-            <ul class="project-awards">
-              <li>Won "Most Useful" at <a href="http://unhackathon.org/">Unhackathon 2014</a></li>
-            </ul>
-          </li>
-          <br>
-
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/frozen-syntax">Frozen Syntax</a>
-            </div>
-            <div class="project-summary">
-              A simultaneous turn-based strategy game based on writing Lisp to
-              control your units.
-            </div>
-            <div class="project-toolstack">Python, Javascript, Lisp, HTML+Sass</div>
-            <div class="project-date">Spring 2014</div>
-            <ul class="project-awards">
-              <li>Presented at <a href="https://nytm.org">New York Tech Meetup August 2014</a></li>
-            </ul>
-          </li>
-
-          <li class="project">
-            <div class="project-title">
-              <a href="https://github.com/Shriken/rendering-engine-cpp">Rendering Engine</a>
-            </div>
-            <div class="project-summary">
-              A 3D rendering engine built from per-pixel access.
-            </div>
-            <div class="project-toolstack">C++, SDL (for per-pixel access)</div>
-            <div class="project-date">Spring 2014</div>
-            <ul class="project-awards">
-              <li>Built for the Computer Graphics class at <a href="stuy.enschool.org">Stuyvesant</a>.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <a name="contact"/>
-      <div class="section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <p>
-          <a target="_blank" href="mailto://zane@zanesterling.io">zane@zanesterling.io</a>
-        </p>
-      </div>
-    </div>
-
-    <hr>
-    <div class="footer">
-      © 2017 Zane Sterling<br>
-      <a href="https://github.com/Shriken/zanesterling-io">Source code</a>
-      <span class="footer-social">
-      </span>
-    </div>
+{% block sections %}
+  <a name="bio"/>
+  <div class="section active" id="bio">
+    <h2 class="section-title">Bio</h2>
+    {% include "info_page/section-bio.html" %}
   </div>
-</body>
-</html>
+
+  <a name="projects"/>
+  <div class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    {% include "info_page/section-projects.html" %}
+  </div>
+</div>
+{% endblock %}
