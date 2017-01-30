@@ -5,6 +5,9 @@
 
   <script src="{% static "info_page/script.js" %}"></script>
   <link href="{% static "info_page/style.css" %}" rel=stylesheet />
+  <noscript>
+    <link href="{% static "info_page/style_nojs.css" %}" rel=stylesheet />
+  </noscript>
 {% endblock %}
 
 
@@ -31,5 +34,4 @@
     <h2 class="section-title">Projects</h2>
     {% include "info_page/section-projects.html" %}
   </div>
-</div>
 {% endblock %}
