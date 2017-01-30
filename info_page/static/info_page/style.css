@@ -114,6 +114,10 @@ li.project .project-title {
 	margin-left: 0%;
 }
 
+li.project div.project-summary {
+	margin-bottom: 5px;
+}
+
 li.project ul.project-awards {
 	list-style: none;
 }
