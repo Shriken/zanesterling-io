@@ -75,7 +75,7 @@ a.nav-item.active {
  */
 div.sections {
 	padding-left: 10%;
-	padding-right: 6%;
+	padding-right: 8%;
 	font-family: Lato, serif;
 }
 
@@ -106,6 +106,7 @@ li.project {
 li.project div,ul {
 	display: block;
 	margin-left: 4%;
+	margin-right: 4%;
 }
 
 li.project .project-title {
@@ -123,6 +124,7 @@ li.project ul.project-awards {
  */
 div.section#bio div.container {
 	margin-left: 4%;
+	margin-right: 4%;
 }
 
 div.section#bio div.container div {
