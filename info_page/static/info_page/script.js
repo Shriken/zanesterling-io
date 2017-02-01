@@ -1,3 +1,13 @@
+var stylesheet_loaded = false;
+
+function style_loaded() {
+	stylesheet_loaded = true;
+}
+
+function style_failed() {
+	stylesheet_loaded = false;
+}
+
 function hash_change(event) {
 	let id = event.newURL.split('#')[1];
 	if (id) {
@@ -10,6 +20,10 @@ function hash_change(event) {
 function nav_link_click(event) {
 	if (event.metaKey || event.ctrlKey) {
 		return;
+	}
+
+	if (!stylesheet_loaded) {
+		return true;
 	}
 
 	let id = event.target.href.split('#')[1];
