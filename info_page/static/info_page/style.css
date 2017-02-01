@@ -158,12 +158,10 @@ div.footer div.social-link {
 	display: block;
 	position: absolute;
 	top: 0;
+	right: 20px;
 
 	height: 100%;
 }
-
-div.social-link-right { right: 20px; }
-div.social-link-left  {  left: 20px; }
 
 div.footer div.social-link img {
 	height: 100%;
