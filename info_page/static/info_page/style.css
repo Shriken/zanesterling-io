@@ -135,11 +135,11 @@ div.section#bio div.container div {
 	margin-bottom: 20px;
 }
 
-ul.bio-achievements {
+div.section#bio div.container div ul {
 	list-style: none;
 }
 
-ul.bio-achievements li {
+div.section#bio div.container div ul li {
 	margin-bottom: 10px;
 }
 
