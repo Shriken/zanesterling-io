@@ -158,11 +158,13 @@ div.footer div.social-links {
 	display: block;
 	position: absolute;
 	top: 0;
-	right: 20px;
+	right: 0;
 
 	height: 100%;
+	text-align: right;
 }
 
 div.footer div.social-links a img {
+	display: inline-block;
 	height: 100%;
 }
